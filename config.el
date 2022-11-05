@@ -42,3 +42,8 @@
   (shell-command "notes-push"))
 
 (run-with-timer (* 30 60) (* 30 60) 'notes-push)
+
+(map!
+ :leader
+ :desc "Open elfeed"
+ "o e" #'elfeed)
